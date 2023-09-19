@@ -32,12 +32,12 @@ var unique = myArray.filter((value, index, arr) => arr.indexOf(value) === index)
 ================================================================================================================================================================================
 Code 4:String reverse without reversing of individual words (Array of elements can be reverse with reverse() method but for string it is won't possible so required to split 
 and then join().
-function removeDuplicates(){
+function reverseWords(){
    var string ="India is my country"
    let result = string.split('').reverse().join('').split(' ').reverse().join(' ')
    return result
 }
-console.log(removeDuplicates()) 
+console.log(reverseWords()) 
 output = "aidnI si ym yrtnuoc"
 ------------------------------------------
 var reverseWords = function(s) {
@@ -3431,7 +3431,7 @@ D.next = A; //it will be circluar linked list
 
 //output : 10 -> 20 -> 30 -> 40 -> Null
 
-function floyedCycleDetection(){
+function floyedCycleDetection(){  
   let fast = head, slow = head;
   while(fast && fast.next){
     slow = slow.next;
